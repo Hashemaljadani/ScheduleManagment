@@ -55,3 +55,5 @@ A simple and efficient Schedule Management App for Android that allows users to 
    ```bash
    git clone https://github.com/Hashemaljadani/ScheduleManagment.git
 
+![Register](https://github.com/user-attachments/assets/d736432f-499c-4061-bc52-538947e60ae9)
+
