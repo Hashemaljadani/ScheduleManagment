@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "150260156162",
+    "project_id": "schedule-management-3c795",
+    "storage_bucket": "schedule-management-3c795.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150260156162:android:4528d2b4c2e427c86a641b",
+        "android_client_info": {
+          "package_name": "com.forksa.schedulemanagement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCob9J8OtpUVCF7Wko-M4eb1XMyN2LCc9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

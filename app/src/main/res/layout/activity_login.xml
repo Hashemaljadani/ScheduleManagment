@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/logo" />
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back"
+            android:textColor="#6200EE"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Subtitle Text -->
+        <TextView
+            android:id="@+id/loginSubtitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to your account"
+            android:textSize="16sp"
+            android:textColor="#808080"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Email or Phone Input -->
+        <EditText
+            android:id="@+id/emailPhoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter email or phone"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Email or phone input field" />
+
+        <!-- Password Input with Toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:importantForAccessibility="yes"
+                android:contentDescription="Password input field" />
+
+            <ImageView
+                android:id="@+id/passwordToggle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="12dp"
+                android:src="@drawable/baseline_visibility_off_24"
+                android:contentDescription="Toggle Password Visibility"
+                android:importantForAccessibility="yes" />
+        </LinearLayout>
+
+        <!-- Remember Me and Forgot Password Layout -->
+        <LinearLayout
+            android:id="@+id/rememberForgotLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/rememberMeCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:importantForAccessibility="yes" />
+
+            <TextView
+                android:id="@+id/forgotPasswordTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textSize="14sp"
+                android:textColor="#6200EE"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_marginStart="8dp"
+                android:importantForAccessibility="yes" />
+        </LinearLayout>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Login button" />
+
+        <!-- No Account Layout -->
+        <LinearLayout
+            android:id="@+id/noAccountLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/noAccountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an Account?"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"
+                android:importantForAccessibility="yes" />
+
+            <TextView
+                android:id="@+id/createAccountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textSize="14sp"
+                android:textColor="#6200EE"
+                android:layout_marginStart="4dp"
+                android:importantForAccessibility="yes" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
